@@ -22,7 +22,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_margin="10dp"
-        android:src="@drawable/fingerprint"/>
+        android:src="@mipmap/fingerprint"/>
 
     <TextView
         android:layout_width="match_parent"
