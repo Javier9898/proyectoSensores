@@ -1,51 +1,59 @@
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:background="@drawable/fondolinterna">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:orientation="horizontal"
         android:layout_alignParentBottom="true"
-        android:id="@+id/linearLayout">
+        android:orientation="horizontal">
 
     </LinearLayout>
 
     <Button
         android:id="@+id/btnVolver"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
+        android:layout_width="227dp"
+        android:layout_height="wrap_content"
         android:layout_above="@+id/linearLayout"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="37dp"
+        android:layout_marginTop="628dp"
+        android:layout_marginBottom="22dp"
         android:text="Volver"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        />
+        android:textColor="#636060"
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/btnFlash"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="182dp"
+        android:layout_height="79dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="126dp"
-        android:layout_marginTop="205dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="386dp"
         android:layout_weight="1"
-        android:text="Encender linterna" />
+        android:fontFamily="sans-serif-medium"
+        android:text="Encender linterna"
+        android:textAllCaps="true"
+        android:textSize="24sp" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="122dp"
-        android:layout_height="120dp"
+        android:layout_width="wrap_content"
+        android:layout_height="171dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="65dp"
-        app:srcCompat="@drawable/encendida" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="162dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginBottom="398dp"
+        app:srcCompat="@drawable/linterna" />
 
 </RelativeLayout>
