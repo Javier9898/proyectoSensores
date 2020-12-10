@@ -12,7 +12,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Activity2 extends AppCompatActivity {
-    Button btnVolver, btnFlash;
+    Button btnVolver, btnFlash, btnProximidad;
     Camera camera;
     boolean encendido = false;
 
@@ -25,7 +25,7 @@ public class Activity2 extends AppCompatActivity {
         setContentView(R.layout.activity_2);
         btnVolver =findViewById(R.id.btnVolver);
         btnFlash = findViewById(R.id.btnFlash);
-
+        btnProximidad = findViewById(R.id.btnProximidad);
         btnVolver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -33,7 +33,12 @@ public class Activity2 extends AppCompatActivity {
             }
         });
 
-
+        btnProximidad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openProximity();
+            }
+        });
         btnFlash.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -66,7 +71,13 @@ public class Activity2 extends AppCompatActivity {
     public void openMainActivity(){
         Intent intent1 = new Intent(this, MainActivity.class);
         startActivity(intent1);
-
     }
+
+    public void openProximity(){
+        Intent intent2 = new Intent(this, proximity_sensor.class);
+        startActivity(intent2);
+    }
+
+
 
 }

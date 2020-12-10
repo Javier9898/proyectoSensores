@@ -6,4 +6,22 @@
     android:layout_height="match_parent"
     tools:context=".proximity_sensor">
 
+    <TextView
+        android:id="@+id/txtTexto"
+        android:layout_width="224dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="187dp"
+        android:layout_marginBottom="500dp"
+        android:text="Linterna apagada"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
