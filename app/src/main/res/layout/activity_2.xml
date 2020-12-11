@@ -33,9 +33,9 @@
         android:id="@+id/btnFlash"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="267dp"
+        android:layout_marginBottom="400dp"
         android:text="Encender linterna" />
 
     <Button
@@ -44,8 +44,49 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="304dp"
+        android:layout_marginBottom="314dp"
         android:text="Encender linterna por proximidad" />
+
+    <Button
+        android:id="@+id/btnGPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="230dp"
+        android:text="UBICACIÓN GPS" />
+
+    <TextView
+        android:id="@+id/tvLatitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="185dp"
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:text="LATITUD:"/>
+
+    <TextView
+        android:id="@+id/tvLongitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="145dp"
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:text="LONGITUD"/>
+    <TextView
+        android:id="@+id/tvUbicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="110dp"
+        android:textSize="18dp"
+        android:textColor="#ffffff"
+        android:text="UBICACIÓN"/>
 
     <Button
         android:id="@+id/btnVolver"
@@ -53,7 +94,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="133dp"
+        android:layout_marginBottom="40dp"
         android:text="Volver" />
 
 </RelativeLayout>
